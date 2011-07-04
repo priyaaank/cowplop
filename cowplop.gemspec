@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://rubygems.org/gems/cowplop'
 
   s.files         = `git ls-files`.split("\n")
+  s.files        += Dir.glob("lib/**/*")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.require_paths = ['lib']
   
   s.add_development_dependency 'bundler', ['>= 1.0.0']
   s.add_development_dependency 'rspec', ['>= 0']
